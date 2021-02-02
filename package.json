@@ -1,0 +1,22 @@
+{
+  "name": "soutenance3",
+  "version": "1.0.0",
+  "description": "projet3",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch./main.scss:./style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/temimi94/sout.git"
+  },
+  "author": "temimi rogaya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/temimi94/sout/issues"
+  },
+  "homepage": "https://github.com/temimi94/sout#readme",
+  "keywords": [
+    "ohmyfood"
+  ]
+}

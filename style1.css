@@ -1,0 +1,372 @@
+@charset "UTF-8";
+.proj-food {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.proj-food__image {
+  width: 50%;
+  height: 30%;
+  border-radius: 0px 0px;
+}
+
+header p {
+  background-color: #d4d2d4;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  width: 100%;
+  margin-left: -6px;
+  padding-right: 10px;
+  text-align: center;
+}
+header p input {
+  border-width: 0px;
+  background-color: #d4d2d4;
+  text-align: center;
+}
+
+.proj-food:hover > p:hover {
+  transition-duration: 2s;
+  border-top: 2px solid #c2c2c2;
+  border-bottom: 2px solid #c2c2c2;
+}
+
+.presentation {
+  background-color: #f2f2f2;
+  width: 100%;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-left: -8px;
+  padding-right: 15px;
+}
+
+.fa-map-marker-alt {
+  color: black;
+}
+
+.proj-food__keep {
+  width: 100%;
+  margin-top: 15px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.proj-food__discover {
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+.proj-food__resto {
+  border-width: 0px;
+  background-color: #cb42f5;
+  border-radius: 20px 20px;
+  width: 65%;
+  padding: 10px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  color: #f7f7f7;
+  font-weight: bold;
+}
+.proj-food__resto:hover {
+  transition-duration: 2s;
+  font-size: 15px;
+}
+
+.proj-food__operation {
+  width: 100%;
+  font-size: 22px;
+}
+
+.proj-food__fonction {
+  width: 95%;
+  list-style: none;
+  padding-left: 20px;
+}
+.proj-food__fonction li {
+  margin-bottom: 15px;
+}
+.proj-food__fonction li button {
+  border-width: 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 40px;
+  padding-left: 0px;
+  border-radius: 15px 15px;
+  background-color: #f7f7f7;
+}
+.proj-food__fonction li button a {
+  text-decoration: none;
+  color: black;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+strong {
+  margin-right: 10px;
+  color: white;
+  background-color: #aa95bf;
+  border-radius: 100%;
+  padding-right: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 8px;
+}
+
+i {
+  color: #8b8f8c;
+}
+
+.liste {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #f2f2f2;
+  padding-top: 5px;
+  height: 1150px;
+  width: 100%;
+  padding-left: 12px;
+  padding-right: 0px;
+  margin-left: -6px;
+}
+.liste div {
+  width: 90%;
+  height: 230px;
+  border-radius: 20px 20px;
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-bottom: 20px;
+  background-color: white;
+}
+.liste div button {
+  background-color: white;
+  border-width: 0px;
+  width: 80%;
+  text-align: left;
+}
+
+.fa-heart {
+  margin-top: -20px;
+  float: inline-end;
+}
+.fa-heart:hover {
+  color: #cb42f5;
+}
+
+i.fas.fa-heart {
+  font-weight: normal;
+}
+i.fas.fa-heart:hover {
+  font-weight: 900;
+}
+
+img {
+  width: 100%;
+  height: 180px;
+  border-top-right-radius: 20px 20px;
+  border-top-left-radius: 20px 20px;
+  object-fit: cover;
+}
+
+.btn {
+  font-weight: bold;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: 14px;
+}
+.btn__comment {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+footer {
+  background-color: #424242;
+  width: 100%;
+  height: 200px;
+  padding-top: 20px;
+  padding-left: 12px;
+  margin-left: -7px;
+}
+footer a {
+  color: white;
+}
+footer img {
+  width: 40%;
+  height: 30%;
+  border-radius: 0px 0px;
+  object-fit: contain;
+  margin-left: 20px;
+}
+
+footer p {
+  margin-left: 20px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.fa-utensils, .fa-hands-helping {
+  color: white;
+  margin-left: 20px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+@media screen and (min-width: 600px) {
+  .liste {
+    height: 70%;
+    justify-content: space-around;
+  }
+  .liste > div {
+    width: 40%;
+  }
+  .liste > .proj-enchante {
+    margin-top: 70px;
+  }
+
+  .proj-palette {
+    margin-top: 70px;
+    margin-left: -180px;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
+.image {
+  height: 50%;
+  border-radius: 0px 0px;
+  width: 50%;
+  margin-bottom: 8px;
+  object-fit: contain;
+}
+
+.image2 {
+  margin-left: -8px;
+  width: 105%;
+  border-radius: 0px 0px;
+}
+
+.coeur {
+  margin-top: -45px;
+  margin-right: 20px;
+}
+
+.titre {
+  margin-left: 10px;
+  font-family: "Shrikhand", cursive;
+  font-weight: normal;
+}
+
+.entrees, .plats, .desserts {
+  margin-left: 15px;
+  width: 10%;
+}
+
+.entrees:hover {
+  border-bottom: 3px solid #03fcc6;
+}
+
+.plats:hover {
+  border-bottom: 3px solid #03fcc6;
+}
+
+.desserts:hover {
+  border-bottom: 3px solid #03fcc6;
+}
+
+.fricassee, .foie, .oeuf, .filet, .parmentier, .turbot, .paris, .Macaron, .mousse {
+  background-color: white;
+  width: 95%;
+  border-radius: 15px 15px;
+  padding-left: 5px;
+}
+
+.prix {
+  margin-top: -10px;
+  padding-bottom: 5px;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.name {
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+em {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.palettes {
+  font-family: "Roboto", sans-serif;
+  background-color: #f2f2f2;
+}
+
+.commander {
+  background-color: #cb42f5;
+  border-radius: 20px 20px;
+  width: 90%;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  font-weight: normal;
+}
+
+.commande {
+  display: flex;
+  justify-content: center;
+}
+
+.proj-enchantee {
+  background-color: #f2f2f2;
+}
+
+.ravioles, .caviar, .homard, .coquilles, .langoustine, .mijoté, .macaron, .baba, .tarte {
+  background-color: white;
+  width: 95%;
+  border-radius: 15px 15px;
+  padding-left: 5px;
+}
+
+.proj-francaise {
+  background-color: #f2f2f2;
+}
+
+.tartare, .veloute, .soupe, .magret, .pigeonneau, .petale, .fondant, .millefeuille {
+  background-color: white;
+  width: 95%;
+  border-radius: 15px 15px;
+  padding-left: 5px;
+}
+
+.proj-delice {
+  background-color: #f2f2f2;
+}
+
+.bouchee, .poulet, .angus, .langouste, .farandole, .brule, .tiramisu {
+  background-color: white;
+  width: 95%;
+  border-radius: 15px 15px;
+  padding-left: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
