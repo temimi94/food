@@ -6,7 +6,7 @@
     <title>oh my food</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/42338cb9b7.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href=".style.css"/>
     <script src="https://kit.fontawesome.com/42338cb9b7.js" crossorigin="anonymous"></script> 
   </head>
 <body>
@@ -33,7 +33,7 @@
                 <button><strong>1</strong><i class="fas fa-mobile-alt"></i><a href="#">Choisissez un restaurant</a></button> 
               </li>
               <li>
-                <button><strong>2</strong><i class="fas fa-ellipsis-v"></i><i class="fas fa-bars"></i><a href="#">Composez votre menu</a></button>
+                <button class="modif"><strong>2</strong><i class="fas fa-ellipsis-v"></i><i class="fas fa-bars"></i><a href="#">Composez votre menu</a></button>
               </li>
               <li>
                 <button><strong>3</strong><i class="fas fa-store"></i><a href="#" >Dégustez au restaurant</a></button>
@@ -43,12 +43,13 @@
   </section>
   <section class="liste">
       <h2>Restaurants</h2>
+      <article>
       <div class="proj-palette">
           <a href="palette.html"><img src="image/palette_du_gout.jpg" alt="le_gout">
           <P class="btn">La palette du goût</P>
           <P class="btn__comment">Ménilmontant</P>
           <i class="fas fa-heart"></i></a>
-      </div>
+        </div>
       <div class="proj-enchante">
           <a href="enchantee.html"><img src="image/enchantée.jpg" alt="enchantée">
           <p class="btn">La note enchantée</p>
@@ -67,6 +68,7 @@
           <p class="btn__comment">Folie-Méricourt</p>
           <i class="fas fa-heart"></i></a>
       </div>
+    </article>
   </section>
   <footer>
     <img class="foodfooter" src="image/blanc.png" alt="food">

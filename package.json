@@ -1,22 +1,22 @@
 {
-  "name": "soutenance3",
+  "name": "food",
   "version": "1.0.0",
-  "description": "projet3",
+  "description": "projet 3",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch./main.scss:./style.css"
+    "sass": "sass --watch ./main.scss:.style.css"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/temimi94/sout.git"
+    "url": "git+https://github.com/temimi94/food.git"
   },
   "author": "temimi rogaya",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/temimi94/sout/issues"
+    "url": "https://github.com/temimi94/food/issues"
   },
-  "homepage": "https://github.com/temimi94/sout#readme",
-  "keywords": [
-    "ohmyfood"
-  ]
+  "homepage": "https://github.com/temimi94/food#readme",
+  "dependencies": {
+    "sass": "^1.32.6"
+  }
 }

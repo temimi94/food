@@ -1,4 +1,15 @@
 @charset "UTF-8";
+.proj > div {
+  width: 100%;
+  height: 20%;
+  background-color: white;
+  margin-top: -8px;
+  padding-top: 5px;
+  margin-left: -7px;
+  padding-left: 12px;
+  display: flex;
+}
+
 .proj-food {
   width: 100%;
   height: 30%;
@@ -7,6 +18,7 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .proj-food__image {
   width: 50%;
   height: 30%;
@@ -24,16 +36,11 @@ header p {
   padding-right: 10px;
   text-align: center;
 }
+
 header p input {
   border-width: 0px;
   background-color: #d4d2d4;
   text-align: center;
-}
-
-.proj-food:hover > p:hover {
-  transition-duration: 2s;
-  border-top: 2px solid #c2c2c2;
-  border-bottom: 2px solid #c2c2c2;
 }
 
 .presentation {
@@ -75,6 +82,7 @@ header p input {
   color: #f7f7f7;
   font-weight: bold;
 }
+
 .proj-food__resto:hover {
   transition-duration: 2s;
   font-size: 15px;
@@ -90,18 +98,21 @@ header p input {
   list-style: none;
   padding-left: 20px;
 }
+
 .proj-food__fonction li {
   margin-bottom: 15px;
 }
+
 .proj-food__fonction li button {
   border-width: 0px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   padding-right: 40px;
   padding-left: 0px;
   border-radius: 15px 15px;
   background-color: #f7f7f7;
 }
+
 .proj-food__fonction li button a {
   text-decoration: none;
   color: black;
@@ -125,9 +136,6 @@ i {
 }
 
 .liste {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   background-color: #f2f2f2;
   padding-top: 5px;
   height: 1150px;
@@ -136,6 +144,13 @@ i {
   padding-right: 0px;
   margin-left: -6px;
 }
+
+article {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .liste div {
   width: 90%;
   height: 230px;
@@ -146,7 +161,9 @@ i {
   flex-wrap: nowrap;
   margin-bottom: 20px;
   background-color: white;
+  animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
+
 .liste div button {
   background-color: white;
   border-width: 0px;
@@ -154,17 +171,19 @@ i {
   text-align: left;
 }
 
-.fa-heart {
-  margin-top: -20px;
-  float: inline-end;
-}
 .fa-heart:hover {
   color: #cb42f5;
 }
 
 i.fas.fa-heart {
   font-weight: normal;
+  display: flex;
+  justify-content: center;
+  margin-top: -35px;
+  width: 150%;
+  font-size: 20px;
 }
+
 i.fas.fa-heart:hover {
   font-weight: 900;
 }
@@ -180,12 +199,12 @@ img {
 .btn {
   font-weight: bold;
   margin-bottom: 0px;
-  margin-top: 0px;
+  margin: 5px;
   font-size: 14px;
 }
+
 .btn__comment {
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 5px;
   font-size: 14px;
   opacity: 0.8;
 }
@@ -198,9 +217,11 @@ footer {
   padding-left: 12px;
   margin-left: -7px;
 }
+
 footer a {
   color: white;
 }
+
 footer img {
   width: 40%;
   height: 30%;
@@ -234,9 +255,11 @@ a {
     height: 70%;
     justify-content: space-around;
   }
+
   .liste > div {
     width: 40%;
   }
+
   .liste > .proj-enchante {
     margin-top: 70px;
   }
@@ -369,4 +392,34 @@ em {
   padding-left: 5px;
 }
 
-/*# sourceMappingURL=style.css.map */
+div.proj-food > p {
+  animation: shadow-inset-tb 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes shadow-inset-tb {
+  0% {
+    box-shadow: inset 0 0 0 0 transparent, inset 0 0 0 0 transparent;
+  }
+  100% {
+    box-shadow: inset 0 -6px 4px -6px rgba(0, 0, 0, 0.5), inset 0 6px 14px -6px rgba(0, 0, 0, 0.5);
+  }
+}
+@keyframes shadow-drop-2-center {
+  0% {
+    transform: translateZ(0);
+    box-shadow: 0 0 0 0 transparent;
+  }
+  100% {
+    transform: translateZ(50px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.35);
+  }
+}
+.proj-food__fonction > li > button {
+  box-shadow: 5px 5px 10px #d4d0d0;
+}
+
+li > button.modif {
+  padding-right: 50px;
+}
+
+/*# sourceMappingURL=.style.css.map */
