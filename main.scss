@@ -1,3 +1,6 @@
+$option:#FF79DA;
+$color :#99E2D0;
+$primery:#9356DC;
 .proj> div {
     width: 100%;
     height: 20%;
@@ -7,6 +10,7 @@
     margin-left: -7px;
     padding-left: 12px;
     display: flex;
+    justify-content: space-evenly;
 }
 .proj-food {
     width: 100%;
@@ -37,6 +41,7 @@
     border-width: 0px;
     background-color: #d4d2d4;
     text-align: center;
+    font-weight: bolder;
   }
   .presentation {
     background-color: #f2f2f2;
@@ -62,35 +67,36 @@
     width: 100%;
     text-align: center;
     font-size: 16px;
-    opacity: 0.7;
+    opacity: 0.6;
+    margin-top: -15px;
   }
   
   .proj-food__resto {
     border-width: 0px;
-    background-color: #cb42f5;
+    background-color: $option;
     border-radius: 20px 20px;
-    width: 65%;
     padding: 10px;
     margin: auto;
     display: flex;
     justify-content: center;
     color: #f7f7f7;
     font-weight: bold;
-  }
-  .proj-food__resto:hover {
-    transition-duration: 2s;
-    font-size: 15px;
-  }
-  
+    background: radial-gradient( lighten($primery, 5) 0%, darken($option, 10) 100%);
+    box-shadow: 2px 2px 2px $primery;
+}
   .proj-food__operation {
     width: 100%;
     font-size: 22px;
   }
   
   .proj-food__fonction {
-    width: 95%;
+    width: 100%;
     list-style: none;
     padding-left: 20px;
+    display: flex;
+    justify-content: space-around;
+flex-wrap: wrap;
+text-align: center;
   }
   .proj-food__fonction li {
     margin-bottom: 15px;
@@ -114,7 +120,7 @@
   strong {
     margin-right: 10px;
     color: white;
-    background-color: #aa95bf;
+    background-color: $primery;
     border-radius: 100%;
     padding-right: 8px;
     padding-top: 5px;
@@ -138,7 +144,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
+    justify-content: center;
+    width:95%;
   }
   .liste div {
     width: 90%;
@@ -159,7 +166,7 @@
     text-align: left;
   }
   .fa-heart:hover {
-    color: #cb42f5;
+    color: $option;
   }
   
   i.fas.fa-heart {
@@ -169,6 +176,7 @@
     margin-top: -35px;
     width: 150%;
     font-size: 20px;
+    transition-duration: 4s;
   }
   i.fas.fa-heart:hover {
     font-weight: 900;
@@ -232,68 +240,49 @@
     margin-right: 10px;
     margin-bottom: 5px;
   }
-  
-  @media screen and (min-width: 600px) {
-    .liste {
-      height: 70%;
-      justify-content: space-around;
-    }
-    .liste > div {
-      width: 40%;
-    }
-    .liste > .proj-enchante {
-      margin-top: 70px;
-    }
-  
-    .proj-palette {
-      margin-top: 70px;
-      margin-left: -180px;
-    }
-  
-    footer {
-      text-align: center;
-    }
-  }
   .image {
     height: 50%;
     border-radius: 0px 0px;
     width: 50%;
     margin-bottom: 8px;
     object-fit: contain;
+    margin-left: -70px;
   }
   
   .image2 {
     margin-left: -8px;
     width: 105%;
     border-radius: 0px 0px;
+    margin-bottom: 100px;
   }
   
   .coeur {
-    margin-top: -45px;
-    margin-right: 20px;
+    margin-top: 29px;
   }
   
   .titre {
-    margin-left: 10px;
-    font-family: "Shrikhand", cursive;
     font-weight: normal;
+    margin-bottom: 0px;
+    font-family: 'Shrikhand', cursive;
   }
   
   .entrees, .plats, .desserts {
     margin-left: 15px;
     width: 10%;
+    font-family:"roboto", cursive;
+
   }
   
   .entrees:hover {
-    border-bottom: 3px solid #03fcc6;
+    border-bottom: 3px solid $color;
   }
   
   .plats:hover {
-    border-bottom: 3px solid #03fcc6;
+    border-bottom: 3px solid $color;
   }
   
   .desserts:hover {
-    border-bottom: 3px solid #03fcc6;
+    border-bottom: 3px solid $color;
   }
   
   .fricassee, .foie, .oeuf, .filet, .parmentier, .turbot, .paris, .Macaron, .mousse {
@@ -301,18 +290,25 @@
     width: 95%;
     border-radius: 15px 15px;
     padding-left: 5px;
+    box-shadow: 5px 5px 10px #d4d0d0;
   }
   
   .prix {
     margin-top: -10px;
     padding-bottom: 5px;
-    font-size: 14px;
-    font-weight: normal;
+    font-size: 13px;
+    font-weight:lighter;
+    display: flex;
+justify-content: space-between;
+width: 90%;
   }
   
   .name {
     padding-top: 10px;
-    font-weight: bold;
+    font-weight: inherit;
+font-size: 14px;
+
+   
   }
   
   em {
@@ -326,18 +322,21 @@
   }
   
   .commander {
-    background-color: #cb42f5;
+    background-color: $option;
     border-radius: 20px 20px;
     width: 90%;
     padding: 10px;
     color: white;
     text-align: center;
     font-weight: normal;
+    background: radial-gradient( lighten($primery, 5) 0%, darken($option, 10) 100%);
+    box-shadow: 2px 2px 2px $primery;
   }
   
   .commande {
     display: flex;
     justify-content: center;
+    margin-top: -79px;
   }
   
   .proj-enchantee {
@@ -349,6 +348,7 @@
     width: 95%;
     border-radius: 15px 15px;
     padding-left: 5px;
+    box-shadow: 5px 5px 10px #d4d0d0;
   }
   
   .proj-francaise {
@@ -360,6 +360,7 @@
     width: 95%;
     border-radius: 15px 15px;
     padding-left: 5px;
+    box-shadow: 5px 5px 10px #d4d0d0;
   }
   
   .proj-delice {
@@ -371,16 +372,12 @@
     width: 95%;
     border-radius: 15px 15px;
     padding-left: 5px;
+    box-shadow: 5px 5px 10px #d4d0d0;
   }
   div.proj-food>p{
-    animation:shadow-inset-tb .4s cubic-bezier(.25,.46,.45,.94) both;
+    animation:shadow-inset-top .4s cubic-bezier(.25,.46,.45,.94) both;
   }
-  @keyframes shadow-inset-tb{
-    0%{box-shadow:inset 0 0 0 0 transparent,inset 0 0 0 0 transparent;
-    }
-    100%{box-shadow:inset 0 -6px 4px -6px rgba(0,0,0,.5),inset 0 6px 14px -6px rgba(0,0,0,.5);
-    }
-  } 
+ 
   @keyframes shadow-drop-2-center{
     0%{transform:translateZ(0);box-shadow:0 0 0 0 transparent}
     100%{transform:translateZ(50px);box-shadow:0 0 20px 0 rgba(0,0,0,.35)}}
@@ -390,3 +387,100 @@
   li > button.modif{
     padding-right: 50px;
   }
+ p.new {
+  position: absolute;
+right: 15px;
+color: #407235;
+background-color: #B8DFAF;
+padding-top: 7px;
+padding-left: 7px;
+padding-right: 7px;
+font-weight: bold;
+font-size: 15px;
+border-radius: 3px 3px;
+padding-bottom: 7px;
+}
+.fa-arrow-left {
+  margin-left: -59px;
+margin-top: 5px;
+color: black;
+}
+ 
+@keyframes shadow-inset-top{0%{box-shadow:inset 0 0 0 0 transparent}100%{box-shadow:inset 0 6px 14px -6px rgba(0,0,0,.5)}}
+.title {
+  display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+}
+@keyframes slide-top{0%{transform:translateY(0)}100%{transform:translateY(-100px)}}
+.eat {
+  animation:slide-top .45s cubic-bezier(.25,.46,.45,.94) both;
+} 
+.eat1{
+  animation:slide-top .35s cubic-bezier(.25,.46,.45,.94) both;
+}
+.eat2 {
+  animation:slide-top .25s cubic-bezier(.25,.46,.45,.94) both;
+}
+@media screen and (min-width: 400px) {
+  div.title {
+    font-size: 18px;
+  }
+  .entrees, .plats, .desserts{
+    font-size: 18px;
+  }
+  .prix {
+    font-size: 17px;
+  }
+  .name {
+    font-size: 20px;
+  }
+  em {
+    font-size: 17px;
+  }
+  header.proj > div > a {
+    width: 20%;
+margin-top: 5px;
+  }
+  .fa-arrow-left {
+    font-size: 25px;
+    margin-top: 0px;
+    margin-left: -29px;
+  }
+  .image {
+    margin-right: 50px;
+  }
+  .image2 {
+    margin-left: -5px;
+    width: 100%;
+  }
+  footer {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 600px) {
+  
+  .fa-arrow-left {
+    margin-top: 10px;
+    margin-left: -70px; 
+  }
+  div.title {
+    font-size: 20px;
+  }
+  .coeur {
+    font-size: 25px;
+}
+}
+@media screen and (min-width: 800px) {
+  section.liste > article > div {
+    width: 40%;
+  }
+  .liste {
+    height: 650px;  
+  }
+  article {
+    justify-content: space-around; 
+  }
+  
+}
+ 
