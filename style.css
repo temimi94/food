@@ -148,7 +148,7 @@ i {
   margin-left: -6px;
 }
 
-article {
+.article {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -156,7 +156,7 @@ article {
   width: 95%;
 }
 
-.liste div {
+.article div {
   width: 90%;
   height: 230px;
   border-radius: 20px 20px;
@@ -267,18 +267,21 @@ a {
 
 .image2 {
   margin-left: -8px;
-  width: 105%;
+  width: 100%;
   border-radius: 0px 0px;
   margin-bottom: 100px;
+  padding-left: 20px;
+  margin-left: -24px;
 }
 
 .coeur {
-  margin-top: 29px;
+  margin-top: -80px;
 }
 
 .titre {
   font-weight: normal;
   margin-bottom: 0px;
+  margin-top: -89px;
   font-family: "Shrikhand", cursive;
 }
 
@@ -464,6 +467,10 @@ p.new {
   animation: slide-top 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
+.menus {
+  margin-top: 70px;
+}
+
 @media screen and (min-width: 400px) {
   div.title {
     font-size: 18px;
@@ -501,8 +508,9 @@ p.new {
   }
 
   .image2 {
-    margin-left: -5px;
     width: 100%;
+    margin-left: -43px;
+    padding-left: 40px;
   }
 
   footer {
@@ -522,18 +530,112 @@ p.new {
   .coeur {
     font-size: 25px;
   }
-}
-@media screen and (min-width: 800px) {
-  section.liste > article > div {
+
+  .article {
+    justify-content: space-around;
+  }
+
+  .article > div {
     width: 40%;
   }
 
   .liste {
-    height: 650px;
+    height: 600px;
+  }
+}
+@media screen and (min-width: 750px) {
+  .menus {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
-  article {
+  .eat1, .eat2 {
+    width: 55%;
+  }
+
+  .eat {
+    width: 45%;
+  }
+
+  .eat2 {
+    margin-left: 180px;
+  }
+
+  header.proj > div > a {
+    margin-top: 10px;
+    margin-left: -80px;
+  }
+
+  .image {
+    margin-left: -220px;
+  }
+
+  .commande > a {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .proj-food__fonction {
     justify-content: space-around;
+  }
+
+  h2.titre {
+    margin-top: -78px;
+    margin-left: -700px;
+    font-size: 40px;
+  }
+
+  .menus {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 120px;
+  }
+
+  .eat, .eat1, .eat2 {
+    width: 33%;
+  }
+
+  .commande > a {
+    width: 20%;
+  }
+
+  .image {
+    width: 35%;
+    margin-left: 150px;
+  }
+
+  .fa-arrow-left {
+    font-size: 30px;
+    margin: 0px;
+  }
+
+  header.proj > div {
+    justify-content: normal;
+    display: flex;
+  }
+  header.proj > div a {
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+
+  .eat2 {
+    margin-left: 0px;
+  }
+
+  .coeur {
+    font-size: 35px;
+    position: absolute;
+    top: 390px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  header.proj > div > a {
+    margin-top: 40px;
+  }
+
+  .fa-arrow-left {
+    font-size: 40px;
   }
 }
 
