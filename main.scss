@@ -13,6 +13,28 @@ $primery:#9356DC;
   justify-content: space-evenly;
 }
 
+.fa-check-circle {
+  position: fixed;
+  margin-top: -85px;
+  margin-left: 360px;
+  color: white;
+  font-size: 20px;
+}
+ @keyframes text-focus-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
+div.fricassee:hover {
+  >.fa-check-circle {
+    background-color: $color;
+    padding-left: 20px;
+    padding-right: 16px;
+    padding-top: 25px;
+    padding-bottom: 23px;
+    border-top-right-radius: 10px 10px;
+    border-bottom-right-radius: 10px 10px;
+    transition-duration: 4s;
+    animation:roll-in-blurred-right .65s cubic-bezier(.23,1.000,.32,1.000) both;
+  }
+}
+ @keyframes roll-in-right{0%{transform:translateX(800px) rotate(540deg);opacity:0}100%{transform:translateX(0) rotate(0deg);opacity:1}}
 .proj-food {
   width: 100%;
   height: 30%;
@@ -311,8 +333,30 @@ margin-left: -24px;
   border-radius: 15px 15px;
   padding-left: 5px;
   box-shadow: 5px 5px 10px #d4d0d0;
+  animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both;
+  transition-duration: 4s;
+ &:hover {
+    >.fa-check-circle {
+      background-color: $color;
+      padding-left: 20px;
+      padding-right: 16px;
+      padding-top: 25px;
+      padding-bottom: 23px;
+      border-top-right-radius: 10px 10px;
+      border-bottom-right-radius: 10px 10px;
+      transition-duration: 4s; 
+      animation:roll-in-right .6s ease-out both;
+    }
 }
-
+}
+.fricassee, .foie, .oeuf, .filet, .parmentier, .turbot, .paris, .Macaron, .mousse{
+&:hover {
+  em {
+    margin-right: 40px;
+    transition-duration: 2s;
+}
+}
+}
 .prix {
   margin-top: -10px;
   padding-bottom: 5px;
@@ -367,6 +411,8 @@ em {
   border-radius: 15px 15px;
   padding-left: 5px;
   box-shadow: 5px 5px 10px #d4d0d0;
+  animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both;
+  transition-duration: 4s;
 }
 
 .proj-francaise {
@@ -379,6 +425,8 @@ em {
   border-radius: 15px 15px;
   padding-left: 5px;
   box-shadow: 5px 5px 10px #d4d0d0;
+  animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both;
+  transition-duration: 4s;
 }
 
 .proj-delice {
@@ -391,6 +439,8 @@ em {
   border-radius: 15px 15px;
   padding-left: 5px;
   box-shadow: 5px 5px 10px #d4d0d0;
+  animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both;
+  transition-duration: 4s;
 }
 
 div.proj-food > p {
