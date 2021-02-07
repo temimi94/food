@@ -15,25 +15,13 @@ $primery:#9356DC;
 
 .fa-check-circle {
   position: fixed;
-  margin-top: -85px;
-  margin-left: 360px;
+  margin-top: -67px;
+  margin-left: 215px;
   color: white;
   font-size: 20px;
 }
  @keyframes text-focus-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
-div.fricassee:hover {
-  >.fa-check-circle {
-    background-color: $color;
-    padding-left: 20px;
-    padding-right: 16px;
-    padding-top: 25px;
-    padding-bottom: 23px;
-    border-top-right-radius: 10px 10px;
-    border-bottom-right-radius: 10px 10px;
-    transition-duration: 4s;
-    animation:roll-in-blurred-right .65s cubic-bezier(.23,1.000,.32,1.000) both;
-  }
-}
+
  @keyframes roll-in-right{0%{transform:translateX(800px) rotate(540deg);opacity:0}100%{transform:translateX(0) rotate(0deg);opacity:1}}
 .proj-food {
   width: 100%;
@@ -293,7 +281,6 @@ a {
   margin-left: -8px;
   width: 100%;
   border-radius: 0px 0px;
-  margin-bottom: 100px;
   padding-left: 20px;
 margin-left: -24px;
 }
@@ -335,22 +322,23 @@ margin-left: -24px;
   box-shadow: 5px 5px 10px #d4d0d0;
   animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both;
   transition-duration: 4s;
- &:hover {
+
+ &:active {
     >.fa-check-circle {
       background-color: $color;
       padding-left: 20px;
       padding-right: 16px;
-      padding-top: 25px;
-      padding-bottom: 23px;
-      border-top-right-radius: 10px 10px;
-      border-bottom-right-radius: 10px 10px;
+      padding-top:17px ;
+      padding-bottom: 17px;
+      border-top-right-radius: 15px 15px;
+      border-bottom-right-radius: 15px 15px;
       transition-duration: 4s; 
       animation:roll-in-right .6s ease-out both;
     }
 }
 }
 .fricassee, .foie, .oeuf, .filet, .parmentier, .turbot, .paris, .Macaron, .mousse{
-&:hover {
+&:active{
   em {
     margin-right: 40px;
     transition-duration: 2s;
@@ -400,7 +388,12 @@ em {
   justify-content: center;
   margin-top: -79px;
 }
-
+.eat, .eat1, .eat2 {
+  margin-bottom: 60px;
+}
+.title {
+  margin-top: 100px;
+}
 .proj-enchantee {
   background-color: #f2f2f2;
 }
@@ -413,6 +406,27 @@ em {
   box-shadow: 5px 5px 10px #d4d0d0;
   animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both;
   transition-duration: 4s;
+  &:active {
+    >.fa-check-circle {
+      background-color: $color;
+      padding-left: 20px;
+      padding-right: 16px;
+      padding-top:17px ;
+      padding-bottom: 17px;
+      border-top-right-radius: 15px 15px;
+      border-bottom-right-radius: 15px 15px;
+      transition-duration: 4s; 
+      animation:roll-in-right .6s ease-out both;
+    }
+}
+}
+.ravioles, .caviar, .homard, .coquilles, .langoustine, .mijoté, .macaron, .baba, .tarte {
+  &:active{
+    em {
+      margin-right: 40px;
+      transition-duration: 2s;
+  }
+  }
 }
 
 .proj-francaise {
@@ -427,12 +441,47 @@ em {
   box-shadow: 5px 5px 10px #d4d0d0;
   animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both;
   transition-duration: 4s;
+  &:active {
+    >.fa-check-circle {
+      background-color: $color;
+      padding-left: 20px;
+      padding-right: 16px;
+      padding-top:17px ;
+      padding-bottom: 17px;
+      border-top-right-radius: 15px 15px;
+      border-bottom-right-radius: 15px 15px;
+      transition-duration: 4s; 
+      animation:roll-in-right .6s ease-out both;
+    }
 }
+}
+.tartare, .veloute, .soupe, .magret, .pigeonneau, .petale, .fondant, .millefeuille {
 
+&:active{
+  em {
+    margin-right: 40px;
+    transition-duration: 2s;
+}
+}
+}
 .proj-delice {
   background-color: #f2f2f2;
 }
-
+.bouchee, .poulet, .angus, .langouste, .farandole, .brule, .tiramisu{
+  &:active{
+    em {
+      margin-right: 40px;
+      transition-duration: 2s;
+  }
+  }
+}
+.fa-arrow-left:focus {
+    body{
+      visibility: hidden;
+      transition-duration: 5s;
+      background-image: url(ohmyfood.png);
+    }
+  }
 .bouchee, .poulet, .angus, .langouste, .farandole, .brule, .tiramisu {
   background-color: white;
   width: 95%;
@@ -441,6 +490,19 @@ em {
   box-shadow: 5px 5px 10px #d4d0d0;
   animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both;
   transition-duration: 4s;
+  &:active {
+    >.fa-check-circle {
+      background-color: $color;
+      padding-left: 20px;
+      padding-right: 16px;
+      padding-top:17px ;
+      padding-bottom: 17px;
+      border-top-right-radius: 15px 15px;
+      border-bottom-right-radius: 15px 15px;
+      transition-duration: 4s; 
+      animation:roll-in-right .6s ease-out both;
+    }
+}
 }
 
 div.proj-food > p {
@@ -507,6 +569,7 @@ p.new {
     transform: translateY(-100px);
   }
 }
+
 .eat {
   animation: slide-top 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
@@ -554,15 +617,16 @@ margin-top: 5px;
     margin-left: -43px;
 padding-left: 40px;
   }
-  footer {
-    text-align: center;
-  }
+  
 }
 @media screen and (min-width: 600px) {
   
   .fa-arrow-left {
     margin-top: 10px;
     margin-left: -70px; 
+  }
+  footer {
+    text-align: center;
   }
   div.title {
     font-size: 20px;
