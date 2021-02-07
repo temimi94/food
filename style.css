@@ -17,6 +17,7 @@
   margin-left: 215px;
   color: white;
   font-size: 20px;
+  animation: roll-in-right 0.6s ease-out both;
 }
 
 @keyframes text-focus-in {
@@ -121,13 +122,12 @@ header p input {
 }
 
 .proj-food__fonction {
-  width: 100%;
+  width: 95%;
   list-style: none;
   padding-left: 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
-  text-align: center;
 }
 
 .proj-food__fonction li {
@@ -176,6 +176,22 @@ i {
   margin-left: -6px;
 }
 
+.index:hover {
+  opacity: 2;
+  background-image: url(image/spiner.gif);
+  background-position: center;
+  animation: anim 5s;
+  background-repeat: no-repeat;
+}
+
+@keyframes anim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .article {
   display: flex;
   flex-direction: row;
@@ -185,7 +201,7 @@ i {
 }
 
 .article div {
-  width: 90%;
+  width: 100%;
   height: 230px;
   border-radius: 20px 20px;
   padding: 3px;
@@ -211,9 +227,9 @@ i {
 i.fas.fa-heart {
   font-weight: normal;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   margin-top: -35px;
-  width: 150%;
+  width: 100%;
   font-size: 20px;
   transition-duration: 4s;
 }
