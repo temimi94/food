@@ -671,8 +671,15 @@ p.new {
     font-size: 20px;
   }
 
+  h2.titre {
+    width: 80%;
+    padding-left: 20px;
+    font-size: 29px;
+  }
+
   .coeur {
-    font-size: 25px;
+    font-size: 29px;
+    width: 20%;
   }
 
   .article {
@@ -726,7 +733,6 @@ p.new {
 
   h2.titre {
     margin-top: -78px;
-    margin-left: -700px;
     font-size: 40px;
   }
 
@@ -770,7 +776,7 @@ p.new {
   .coeur {
     font-size: 35px;
     position: absolute;
-    top: 390px;
+    top: 50px;
   }
 }
 @media screen and (min-width: 1400px) {
