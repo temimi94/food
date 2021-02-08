@@ -15,6 +15,10 @@
   background-color: #ffe6ff;
 }
 
+.proj-food__fonction > {
+  width: 95%;
+}
+
 .fa-check-circle {
   position: fixed;
   margin-top: -67px;
@@ -123,6 +127,7 @@ header p input {
 
 .proj-food__resto {
   border-width: 0px;
+  width: 80%;
   background-color: #FF79DA;
   border-radius: 20px 20px;
   padding: 10px;
@@ -247,7 +252,7 @@ i {
 i.fas.fa-heart {
   font-weight: normal;
   display: flex;
-  justify-content: end;
+  justify-content: right;
   margin-top: -35px;
   width: 100%;
   font-size: 20px;
