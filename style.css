@@ -127,7 +127,7 @@ header p input {
 
 .proj-food__resto {
   border-width: 0px;
-  width: 80%;
+  width: 60%;
   background-color: #FF79DA;
   border-radius: 20px 20px;
   padding: 10px;
@@ -150,13 +150,12 @@ header p input {
   list-style: none;
   padding-left: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   flex-wrap: wrap;
 }
 
 .proj-food__fonction li {
   margin-bottom: 15px;
-  width: 100%;
 }
 
 .proj-food__fonction li button {
@@ -253,7 +252,7 @@ i {
 i.fas.fa-heart {
   font-weight: normal;
   display: flex;
-  justify-content: right;
+  justify-content:flex-end;
   margin-top: -35px;
   width: 100%;
   font-size: 20px;
