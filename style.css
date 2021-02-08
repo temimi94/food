@@ -15,8 +15,8 @@
   background-color: #ffe6ff;
 }
 
-.proj-food__fonction > {
-  width: 95%;
+.proj-food__fonction > li > button {
+  width: 100%;
 }
 
 .fa-check-circle {
@@ -156,6 +156,7 @@ header p input {
 
 .proj-food__fonction li {
   margin-bottom: 15px;
+  width: 100%;
 }
 
 .proj-food__fonction li button {
