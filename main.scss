@@ -19,11 +19,33 @@ $primery:#9356DC;
   margin-left: 215px;
   color: white;
   font-size: 20px;
-  animation:roll-in-right .6s ease-out both;
 }
  @keyframes text-focus-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
 
- @keyframes roll-in-right{0%{transform:translateX(800px) rotate(540deg);opacity:0}100%{transform:translateX(0) rotate(0deg);opacity:1}}
+ h2.titre {
+   background-color: #f2f2f2;
+   margin-top: -120px;
+height: 50px;
+padding-left: 60px;
+padding-right: 71px;
+margin-left: -8px;
+border-top-left-radius: 30px 30px;
+padding-top: 20px;
+padding-left: 2px;
+font-size: 22px;
+width:80%;
+ }
+ body {
+  background-color: #f2f2f2;
+ }
+ .fa-heart.coeur {
+  background-color: #f2f2f2;
+position: relative;
+margin-top: -120px; 
+padding-top: 30px;
+padding-right: 19px;
+border-top-right-radius: 30px 30px;
+ }
 .proj-food {
   width: 100%;
   height: 30%;
@@ -164,7 +186,7 @@ i {
   background-image: url(image/spiner.gif);
   background-position:center ;
   animation: anim 5s ;
- background-repeat: no-repeat; 
+  background-repeat: no-repeat; 
   }
 @keyframes anim {
  0% {
@@ -338,7 +360,7 @@ margin-left: -24px;
   transition-duration: 4s;
 
  &:active {
-    >.fa-check-circle {
+      .fa-check-circle {
       background-color: $color;
       padding-left: 20px;
       padding-right: 16px;
@@ -347,7 +369,7 @@ margin-left: -24px;
       border-top-right-radius: 15px 15px;
       border-bottom-right-radius: 15px 15px;
       transition-duration: 4s; 
-      animation:roll-in-right .6s ease-out both;
+  
     }
 }
 }
