@@ -13,7 +13,24 @@ $primery:#9356DC;
   justify-content: space-evenly;
 }
 .proj-food__fonction > li > button:hover {
-  background-color:#ffe6ff ;
+  background-color:#F5EDFF ;
+  .fa-bars {
+    color: $primery;
+  
+  +.fa-store {
+    color:$primery 
+}
+}
+}
+.proj-food__fonction > li > button:hover{
+  .fa-ellipsis-v {
+    color: $primery;
+}
+}
+.proj-food__fonction > li:hover{
+.fa-mobile-alt:hover {
+  color:$primery
+ }
 }
 .proj-food__fonction > li > button {
   width: 100%;
@@ -66,7 +83,7 @@ border-top-right-radius: 30px 30px;
 }
 
 header p {
-  background-color: #d4d2d4;
+  background-color:#EAEAEA ;
   padding-top: 15px;
   padding-bottom: 15px;
   margin-bottom: 0px;
@@ -79,18 +96,13 @@ header p {
 
 header p input {
   border-width: 0px;
-  background-color: #d4d2d4;
+  background-color: #EAEAEA;
   text-align: center;
   font-weight: bolder;
 }
 
 .presentation {
-  background-color: #f2f2f2;
   width: 100%;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  margin-left: -8px;
-  padding-right: 15px;
 }
 
 .fa-map-marker-alt {
@@ -114,16 +126,15 @@ header p input {
 
 .proj-food__resto {
   border-width: 0px;
-  width: 60%;
+  margin: auto;
+  max-width: 300px;
   background-color: #FF79DA;
   border-radius: 20px 20px;
   padding: 10px;
-  justify-content: center;
-  margin:auto;
   display: flex;
+  justify-content: center;
   color: #f7f7f7;
   font-weight: bold;
-  background: radial-gradient(#a16be0 0%, #ff46cc 100%);
   box-shadow: 2px 2px 2px #9356DC;
 }
 
@@ -186,13 +197,6 @@ i {
   padding-right: 0px;
   margin-left: -6px;
 }
-.index:hover {
-  opacity: 2;
-  background-image: url(image/spiner.gif);
-  background-position:center ;
-  animation: anim 5s ;
-  background-repeat: no-repeat; 
-  }
 @keyframes anim {
  0% {
    opacity: 0;
@@ -229,8 +233,12 @@ i {
   text-align: left;
 }
 
-.fa-heart:hover {
-  color: #FF79DA;
+i.fas.fa-heart:hover {
+  color:$primery;
+  font-weight: bold;
+}
+.coeur:hover {
+  color:$primery;
   font-weight: bold;
 }
 
@@ -241,7 +249,8 @@ i.fas.fa-heart {
   margin-top: -35px;
   width: 100%;
   font-size: 20px;
-  transition-duration: 4s;
+  transition-duration: 2s;
+  border-color:black;
 }
 
 i.fas.fa-heart:hover {
@@ -365,7 +374,7 @@ margin-left: -24px;
   animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both;
   transition-duration: 4s;
 
- &:active {
+ &:hover {
       .fa-check-circle {
       background-color: $color;
       padding-left: 20px;
@@ -448,7 +457,7 @@ em {
   box-shadow: 5px 5px 10px #d4d0d0;
   animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both;
   transition-duration: 4s;
-  &:active {
+  &:hover {
     >.fa-check-circle {
       background-color: $color;
       padding-left: 20px;
@@ -463,7 +472,7 @@ em {
 }
 }
 .ravioles, .caviar, .homard, .coquilles, .langoustine, .mijoté, .macaron, .baba, .tarte {
-  &:active{
+  &:hover{
     em {
       margin-right: 40px;
       transition-duration: 2s;
@@ -483,7 +492,7 @@ em {
   box-shadow: 5px 5px 10px #d4d0d0;
   animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both;
   transition-duration: 4s;
-  &:active {
+  &:hover {
     >.fa-check-circle {
       background-color: $color;
       padding-left: 20px;
@@ -499,7 +508,7 @@ em {
 }
 .tartare, .veloute, .soupe, .magret, .pigeonneau, .petale, .fondant, .millefeuille {
 
-&:active{
+&:hover{
   em {
     margin-right: 40px;
     transition-duration: 2s;
@@ -510,7 +519,7 @@ em {
   background-color: #f2f2f2;
 }
 .bouchee, .poulet, .angus, .langouste, .farandole, .brule, .tiramisu{
-  &:active{
+  &:hover{
     em {
       margin-right: 40px;
       transition-duration: 2s;
@@ -532,7 +541,7 @@ em {
   box-shadow: 5px 5px 10px #d4d0d0;
   animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both;
   transition-duration: 4s;
-  &:active {
+  &:hover {
     >.fa-check-circle {
       background-color: $color;
       padding-left: 20px;
@@ -571,15 +580,11 @@ li > button.modif {
 p.new {
   position: absolute;
   right: 15px;
-  color: #407235;
-  background-color: #B8DFAF;
-  padding-top: 7px;
-  padding-left: 7px;
-  padding-right: 7px;
+  color: #008766;
+  background-color: #99E2D0 ;
   font-weight: bold;
   font-size: 15px;
-  border-radius: 3px 3px;
-  padding-bottom: 7px;
+  padding: 7px;
 }
 
 .fa-arrow-left {
@@ -612,7 +617,7 @@ p.new {
 }
 
 .eat {
-  animation: slide-top 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .eat1 {
@@ -620,7 +625,7 @@ p.new {
 }
 
 .eat2 {
-  animation: slide-top 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .menus {
   margin-top: 70px;

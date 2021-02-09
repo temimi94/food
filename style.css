@@ -12,7 +12,21 @@
 }
 
 .proj-food__fonction > li > button:hover {
-  background-color: #ffe6ff;
+  background-color: #F5EDFF;
+}
+.proj-food__fonction > li > button:hover .fa-bars {
+  color: #9356DC;
+}
+.proj-food__fonction > li > button:hover .fa-bars + .fa-store {
+  color: #9356DC;
+}
+
+.proj-food__fonction > li > button:hover .fa-ellipsis-v {
+  color: #9356DC;
+}
+
+.proj-food__fonction > li:hover .fa-mobile-alt:hover {
+  color: #9356DC;
 }
 
 .proj-food__fonction > li > button {
@@ -79,7 +93,7 @@ body {
 }
 
 header p {
-  background-color: #d4d2d4;
+  background-color: #EAEAEA;
   padding-top: 15px;
   padding-bottom: 15px;
   margin-bottom: 0px;
@@ -92,18 +106,13 @@ header p {
 
 header p input {
   border-width: 0px;
-  background-color: #d4d2d4;
+  background-color: #EAEAEA;
   text-align: center;
   font-weight: bolder;
 }
 
 .presentation {
-  background-color: #f2f2f2;
   width: 100%;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  margin-left: -8px;
-  padding-right: 15px;
 }
 
 .fa-map-marker-alt {
@@ -127,16 +136,15 @@ header p input {
 
 .proj-food__resto {
   border-width: 0px;
-  width: 60%;
+  margin: auto;
+  max-width: 300px;
   background-color: #FF79DA;
   border-radius: 20px 20px;
   padding: 10px;
-  justify-content: center;
-  margin: auto;
   display: flex;
+  justify-content: center;
   color: #f7f7f7;
   font-weight: bold;
-  background: radial-gradient(#a16be0 0%, #ff46cc 100%);
   box-shadow: 2px 2px 2px #9356DC;
 }
 
@@ -200,14 +208,6 @@ i {
   margin-left: -6px;
 }
 
-.index:hover {
-  opacity: 2;
-  background-image: url(image/spiner.gif);
-  background-position: center;
-  animation: anim 5s;
-  background-repeat: no-repeat;
-}
-
 @keyframes anim {
   0% {
     opacity: 0;
@@ -244,8 +244,13 @@ i {
   text-align: left;
 }
 
-.fa-heart:hover {
-  color: #FF79DA;
+i.fas.fa-heart:hover {
+  color: #9356DC;
+  font-weight: bold;
+}
+
+.coeur:hover {
+  color: #9356DC;
   font-weight: bold;
 }
 
@@ -256,7 +261,8 @@ i.fas.fa-heart {
   margin-top: -35px;
   width: 100%;
   font-size: 20px;
-  transition-duration: 4s;
+  transition-duration: 2s;
+  border-color: black;
 }
 
 i.fas.fa-heart:hover {
@@ -380,7 +386,7 @@ a {
   animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   transition-duration: 4s;
 }
-.fricassee:active .fa-check-circle, .foie:active .fa-check-circle, .oeuf:active .fa-check-circle, .filet:active .fa-check-circle, .parmentier:active .fa-check-circle, .turbot:active .fa-check-circle, .paris:active .fa-check-circle, .Macaron:active .fa-check-circle, .mousse:active .fa-check-circle {
+.fricassee:hover .fa-check-circle, .foie:hover .fa-check-circle, .oeuf:hover .fa-check-circle, .filet:hover .fa-check-circle, .parmentier:hover .fa-check-circle, .turbot:hover .fa-check-circle, .paris:hover .fa-check-circle, .Macaron:hover .fa-check-circle, .mousse:hover .fa-check-circle {
   background-color: #99E2D0;
   padding-left: 20px;
   padding-right: 16px;
@@ -461,7 +467,7 @@ em {
   animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   transition-duration: 4s;
 }
-.ravioles:active > .fa-check-circle, .caviar:active > .fa-check-circle, .homard:active > .fa-check-circle, .coquilles:active > .fa-check-circle, .langoustine:active > .fa-check-circle, .mijoté:active > .fa-check-circle, .macaron:active > .fa-check-circle, .baba:active > .fa-check-circle, .tarte:active > .fa-check-circle {
+.ravioles:hover > .fa-check-circle, .caviar:hover > .fa-check-circle, .homard:hover > .fa-check-circle, .coquilles:hover > .fa-check-circle, .langoustine:hover > .fa-check-circle, .mijoté:hover > .fa-check-circle, .macaron:hover > .fa-check-circle, .baba:hover > .fa-check-circle, .tarte:hover > .fa-check-circle {
   background-color: #99E2D0;
   padding-left: 20px;
   padding-right: 16px;
@@ -473,7 +479,7 @@ em {
   animation: roll-in-right 0.6s ease-out both;
 }
 
-.ravioles:active em, .caviar:active em, .homard:active em, .coquilles:active em, .langoustine:active em, .mijoté:active em, .macaron:active em, .baba:active em, .tarte:active em {
+.ravioles:hover em, .caviar:hover em, .homard:hover em, .coquilles:hover em, .langoustine:hover em, .mijoté:hover em, .macaron:hover em, .baba:hover em, .tarte:hover em {
   margin-right: 40px;
   transition-duration: 2s;
 }
@@ -491,7 +497,7 @@ em {
   animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   transition-duration: 4s;
 }
-.tartare:active > .fa-check-circle, .veloute:active > .fa-check-circle, .soupe:active > .fa-check-circle, .magret:active > .fa-check-circle, .pigeonneau:active > .fa-check-circle, .petale:active > .fa-check-circle, .fondant:active > .fa-check-circle, .millefeuille:active > .fa-check-circle {
+.tartare:hover > .fa-check-circle, .veloute:hover > .fa-check-circle, .soupe:hover > .fa-check-circle, .magret:hover > .fa-check-circle, .pigeonneau:hover > .fa-check-circle, .petale:hover > .fa-check-circle, .fondant:hover > .fa-check-circle, .millefeuille:hover > .fa-check-circle {
   background-color: #99E2D0;
   padding-left: 20px;
   padding-right: 16px;
@@ -503,7 +509,7 @@ em {
   animation: roll-in-right 0.6s ease-out both;
 }
 
-.tartare:active em, .veloute:active em, .soupe:active em, .magret:active em, .pigeonneau:active em, .petale:active em, .fondant:active em, .millefeuille:active em {
+.tartare:hover em, .veloute:hover em, .soupe:hover em, .magret:hover em, .pigeonneau:hover em, .petale:hover em, .fondant:hover em, .millefeuille:hover em {
   margin-right: 40px;
   transition-duration: 2s;
 }
@@ -512,7 +518,7 @@ em {
   background-color: #f2f2f2;
 }
 
-.bouchee:active em, .poulet:active em, .angus:active em, .langouste:active em, .farandole:active em, .brule:active em, .tiramisu:active em {
+.bouchee:hover em, .poulet:hover em, .angus:hover em, .langouste:hover em, .farandole:hover em, .brule:hover em, .tiramisu:hover em {
   margin-right: 40px;
   transition-duration: 2s;
 }
@@ -532,7 +538,7 @@ em {
   animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   transition-duration: 4s;
 }
-.bouchee:active > .fa-check-circle, .poulet:active > .fa-check-circle, .angus:active > .fa-check-circle, .langouste:active > .fa-check-circle, .farandole:active > .fa-check-circle, .brule:active > .fa-check-circle, .tiramisu:active > .fa-check-circle {
+.bouchee:hover > .fa-check-circle, .poulet:hover > .fa-check-circle, .angus:hover > .fa-check-circle, .langouste:hover > .fa-check-circle, .farandole:hover > .fa-check-circle, .brule:hover > .fa-check-circle, .tiramisu:hover > .fa-check-circle {
   background-color: #99E2D0;
   padding-left: 20px;
   padding-right: 16px;
@@ -568,15 +574,11 @@ li > button.modif {
 p.new {
   position: absolute;
   right: 15px;
-  color: #407235;
-  background-color: #B8DFAF;
-  padding-top: 7px;
-  padding-left: 7px;
-  padding-right: 7px;
+  color: #008766;
+  background-color: #99E2D0;
   font-weight: bold;
   font-size: 15px;
-  border-radius: 3px 3px;
-  padding-bottom: 7px;
+  padding: 7px;
 }
 
 .fa-arrow-left {
@@ -608,7 +610,7 @@ p.new {
   }
 }
 .eat {
-  animation: slide-top 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .eat1 {
@@ -616,7 +618,7 @@ p.new {
 }
 
 .eat2 {
-  animation: slide-top 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .menus {
