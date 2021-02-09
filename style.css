@@ -252,7 +252,7 @@ i {
 i.fas.fa-heart {
   font-weight: normal;
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
   margin-top: -35px;
   width: 100%;
   font-size: 20px;
