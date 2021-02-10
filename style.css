@@ -312,7 +312,7 @@ em {
   position: absolute;
   margin-top: -52px;
   margin-left: 320px;
-  animation: rotation 5s linear;
+  animation: rotation 5s;
 }
 
 .commander {
