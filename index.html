@@ -9,7 +9,12 @@
     <link rel="stylesheet" href="style.css"/>
     <script src="https://kit.fontawesome.com/42338cb9b7.js" crossorigin="anonymous"></script> 
   </head>
-<body class="index">
+<body>
+  <div class="loading">
+    <i class="fas fa-glass-martini-alt"></i>
+    <img class="spiner" src="image/ohmyfood.png" alt=""><p class="loader">chargement...</p>
+  </div>
+  <div class="projet">
  <header>
    <div class="proj-food">
      <img class="proj-food__image" src="image/ohmyfood.png" alt="ohmyfood" >
@@ -18,30 +23,48 @@
      <input class="proj-food__place" name="saisie" type="text" placeholder= "Paris, Belleville" required/>
     </p>
     </div>
-  </header>  
+  </header> 
   <section class="presentation">
       <h4 class="proj-food__keep">Réservez le menu qui vous convient</h4>
       <p class="proj-food__discover">Découvrez des restaurants d'exception,
           séléctionnés par nos soins.</p>
       <button class="proj-food__resto">Explorer nos restaurants</button>
       </section> 
-  <section>
+  <section class="fonctionnement">
       <h4 class="proj-food__operation">Fonctionnement</h4>
       <nav>
           <ol class="proj-food__fonction">
               <li>
-                <button><strong>1</strong><i class="fas fa-mobile-alt"></i><a href="#">Choisissez un restaurant</a></button> 
+                <button>
+                  <strong>
+                    1
+                  </strong>
+                  <i class="fas fa-mobile-alt"></i>
+                  <a href="#">Choisissez un restaurant</a>
+                </button> 
               </li>
               <li>
-                <button class="modif"><strong>2</strong><i class="fas fa-ellipsis-v"></i><i class="fas fa-bars"></i><a href="#">Composez votre menu</a></button>
+                <button class="modif">
+                  <strong>
+                    2
+                  </strong>
+                  <i class="fas fa-ellipsis-v"></i>
+                  <i class="fas fa-bars"></i>
+                  <a href="#">Composez votre menu</a>
+                </button>
               </li>
               <li>
-                <button><strong>3</strong><i class="fas fa-store"></i><a href="#" >Dégustez au restaurant</a></button>
+                <button>
+                  <strong>
+                    3
+                  </strong>
+                  <i class="fas fa-store"></i>
+                  <a href="#" >Dégustez au restaurant</a>
+                </button>
               </li>
            </ol>
           </nav>
   </section>
-  
   <section class="liste">
       <h2>Restaurants</h2>
       <div class="article">
@@ -84,5 +107,6 @@
     <p><a href="#">Mentions légales</a></p>
     <p><a href="mailto:hamdaouirogoya1994@outlook.fr">Contact</a></p>
   </footer>
+</div>
 </body>
 </html>
