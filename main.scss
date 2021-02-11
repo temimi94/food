@@ -51,6 +51,10 @@ $primery:#9356DC;
 
   /*--ACCEUIL--*/
   
+  .acceuil {
+    background-color: white;
+  }
+
   .projet{
     animation: transparence 12s;
   }
@@ -64,7 +68,7 @@ $primery:#9356DC;
   .loading {
     position: absolute;
     margin-top: 90%;
-    margin-left: 5%;
+    margin-left: 12%;
     text-align: center;
     opacity:0;
     animation: loading 8s;
@@ -168,28 +172,37 @@ $primery:#9356DC;
     color: white;
     background-color: #9356DC;
     border-radius: 100%;
-    padding-right: 8px;
+    padding-right: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-left: 8px;
+    padding-left: 7px;
   } 
 
-  .proj-food__resto {
-    border-width: 0px;
-    margin: auto;
-    background-color: #FF79DA;
-    border-radius: 20px 20px;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    color: #f7f7f7;
-    font-weight: bold;
-  }
-  
   /*---ACCEUIL---*/
 
   .proj-food__operation {
     font-size: 22px;
+  }
+
+  .proj-food__resto, .commander {
+    border: 0;
+    padding:10px 14px;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 100px;
+    color: #fff;
+    background-color: #686868;
+    background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+    cursor: pointer;
+    transition-duration: .25s;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.25);
+    &:hover{
+      background-color: #fff;
+      box-shadow: 5px 5px 10px rgba(0,0,0,.5);
+    }
+  }
+  .presentation {
+    text-align: center;
   }
 
   .proj-food__fonction {
@@ -222,17 +235,6 @@ $primery:#9356DC;
     color: #7E7E7E;
   }
 
-  .proj-food__fonction > li > button:hover {
-  background-color:#F5EDFF ;
-  .fa-bars {
-    color: $primery;
-  
-  +.fa-store {
-    color:$primery 
-}
-}
-  }
-
   .proj-food__fonction li button a {
     color: black;
     margin-left: 20px;
@@ -242,6 +244,8 @@ $primery:#9356DC;
 
    .eat, .eat1, .eat2 {
     margin-bottom: 60px;
+    max-width: 100%;
+    overflow: hidden;
   }
 
    .eat {
@@ -281,69 +285,97 @@ $primery:#9356DC;
   }
 
   .plat {
-    background-color: white;
-    width: 95%;
-    border-radius: 15px 15px;
-    padding-left: 5px;
-    box-shadow: 5px 5px 10px #d4d0d0;
-    transition-duration: 4s;
+    background-color: #fff;
+    display: flex;
+    border-radius: .75rem;
+    margin: 1rem 0;
+    box-shadow: .25rem .25rem 1rem rgba(0,0,0,.1);
+    overflow: hidden;
+    cursor: pointer;
+    padding: 1rem;
   }
 
-  .plat{
-    &:hover{
-      em {
-        margin-right: 40px;
-        transition-duration: 2s;
-    }
-    }
-    }
+  .description {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    flex: 1;
+  }
 
-    .prix {
-      margin-top: -10px;
-      padding-bottom: 5px;
-      font-size: 15px;
-      opacity: 0.7;
-      display: flex;
-      justify-content: space-between;
-      width: 90%;
+  .prix {
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-left: .5rem;
+  }
+
+  .name, .commentaire {
+    margin:0px;
+  }
+
+  .name {
+    font-weight: 600;
+  }
+
+  .commentaire {
+    opacity: 0.8;
+  }
+
+  .confirmation {
+    background-color: #99e2d0;
+    margin: -1rem -5rem -1rem 1rem;
+    margin-right: -5rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .5s;
+  }
+
+  .plat:hover { 
+    div.confirmation {
+      margin-right: -1rem;
+      transform: rotate(0);
     }
+  }
+
+  .valider {
+    height: 1.6rem;
+    width: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+  }
+
+  .fa-check-circle {
+    color:white;
+    font-size: 23px;
+  }
     
-    .name {
-      padding-top: 10px;
-      font-weight: inherit;
-    }
-        
-    em {
-      font-weight: bold;
-      font-size: 15px;
-    }
-
+  .plat:hover {
     .fa-check-circle {
-      position: absolute;
-      margin-top: -52px;
-      margin-left: 320px;
-      animation: rotation 5s linear;
+      animation: rotation 1s;
     }
+  }
 
     .commander {
-      background-color: #FF79DA;
-      border-radius: 20px 20px;
-      width: 90%;
-      padding: 10px;
-      color: white;
+      width: 40%;
       text-align: center;
       font-weight: bold;
       display: flex;
       justify-content: center;
     }
 
-  
-
    /*---ACCUEIL---*/
 
    .liste {
     height: 1150px;
     width: 100%;
+    background-color: #f2f2f2;
+    padding: 7px;
+    margin-left: -7px;
   }
 
   .article {
