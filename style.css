@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*---ANIMATION---*/
 @keyframes transparence {
   0% {
@@ -40,7 +39,7 @@ body {
 
 .fa-arrow-left {
   position: absolute;
-  margin-left: -85px;
+  margin-left: -105px;
   margin-top: 8px;
 }
 
@@ -257,15 +256,16 @@ li > button.modif {
   color: #FF79DA;
   font-weight: 900;
   transition-duration: 3s;
-  font-size: 25px;
+  font-size: 29px;
 }
 
 .fa-heart {
   cursor: pointer;
+  font-size: 26px;
 }
 
 .titre {
-  padding: 10px 48px 28px 20px;
+  padding: 10px 28px 28px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -445,6 +445,7 @@ i.fas.fa-heart {
 .menu {
   text-transform: uppercase;
   position: relative;
+  font-weight: normal;
 }
 
 .coeur {
@@ -503,113 +504,68 @@ a {
 }
 
 /*---MEDIA---*/
-.ravioles, .caviar, .homard, .coquilles, .langoustine, .mijoté, .macaron, .baba, .tarte {
-  background-color: white;
-  width: 95%;
-  border-radius: 15px 15px;
-  padding-left: 5px;
-  box-shadow: 5px 5px 10px #d4d0d0;
-  transition-duration: 4s;
-}
-
-.ravioles:hover em, .caviar:hover em, .homard:hover em, .coquilles:hover em, .langoustine:hover em, .mijoté:hover em, .macaron:hover em, .baba:hover em, .tarte:hover em {
-  margin-right: 40px;
-  transition-duration: 2s;
-}
-
-.tartare, .veloute, .soupe, .magret, .pigeonneau, .petale, .fondant, .millefeuille {
-  background-color: white;
-  width: 95%;
-  border-radius: 15px 15px;
-  padding-left: 5px;
-  box-shadow: 5px 5px 10px #d4d0d0;
-  transition-duration: 4s;
-}
-
-.tartare:hover em, .veloute:hover em, .soupe:hover em, .magret:hover em, .pigeonneau:hover em, .petale:hover em, .fondant:hover em, .millefeuille:hover em {
-  margin-right: 40px;
-  transition-duration: 2s;
-}
-
-.bouchee:hover em, .poulet:hover em, .angus:hover em, .langouste:hover em, .farandole:hover em, .brule:hover em, .tiramisu:hover em {
-  margin-right: 40px;
-  transition-duration: 2s;
-}
-
-.bouchee, .poulet, .angus, .langouste, .farandole, .brule, .tiramisu {
-  background-color: white;
-  width: 95%;
-  border-radius: 15px 15px;
-  padding-left: 5px;
-  box-shadow: 5px 5px 10px #d4d0d0;
-  transition-duration: 4s;
-}
-
-@media screen and (min-width: 400px) {
-  div.title {
-    font-size: 18px;
-  }
-
-  .entrees, .plats, .desserts {
-    font-size: 18px;
-  }
-
-  .prix {
-    font-size: 17px;
-  }
-
-  .name {
-    font-size: 20px;
-  }
-
-  em {
-    font-size: 17px;
-  }
-
+@media screen and (min-width: 700px) {
   header.proj > div > a {
-    width: 20%;
-    margin-top: 5px;
-  }
-
-  .fa-arrow-left {
-    font-size: 25px;
-    margin-top: 0px;
-    margin-left: -29px;
+    margin-top: 10px;
+    margin-left: -80px;
   }
 
   .image {
-    margin-right: 50px;
+    margin-left: -220px;
   }
 
-  .image2 {
-    width: 100%;
-    margin-left: -43px;
-    padding-left: 40px;
-  }
-}
-@media screen and (min-width: 600px) {
-  .fa-arrow-left {
-    margin-top: 10px;
-    margin-left: -70px;
+  .commande > a {
+    width: 40%;
   }
 
-  footer {
-    text-align: center;
-  }
-
-  div.title {
-    font-size: 20px;
-  }
-
-  h2.titre {
-    width: 80%;
-    padding-left: 20px;
-    font-size: 29px;
-  }
-
-  .coeur {
-    font-size: 29px;
+  img.image {
     width: 20%;
+  }
+
+  .fa-arrow-left {
+    position: absolute;
+    margin-left: -205px;
+    margin-top: -8px;
+  }
+
+  .titre {
+    padding: 10px 100px 28px 20px;
+  }
+
+  .restaurant {
+    width: 70%;
+    position: relative;
+    left: 15%;
+  }
+
+  .titre {
+    margin-top: 0px;
+  }
+
+  /*---ACCEUIL---*/
+  .loading {
+    margin-left: 30%;
+  }
+
+  /*---HEADER---*/
+  div.proj-food {
+    justify-content: space-around;
+  }
+  div.proj-food > p {
+    width: 30%;
+    margin-top: 5px;
+  }
+
+  .acceuil > div.projet > header {
+    background-color: #f2f2f2;
+    padding-left: 15px;
+    margin-top: -7px;
+    margin-left: -7px;
+  }
+
+  img.proj-food__image {
+    margin-top: 10px;
+    width: 30%;
   }
 
   .article {
@@ -623,99 +579,63 @@ a {
   .liste {
     height: 600px;
   }
+
+  div.proj-enchante > p.new {
+    position: absolute;
+    right: 90px;
+  }
+
+  div.proj-palette > p.new {
+    position: absolute;
+    right: 750px;
+  }
+
+  .loading {
+    margin-top: 20%;
+    margin-left: 40%;
+  }
+
+  /*---FOOTER---*/
+  footer {
+    text-align: center;
+  }
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1000px) {
+  /*---HEADER---*/
+  .fa-arrow-left {
+    position: absolute;
+    margin-left: -275px;
+    margin-top: -4px;
+  }
+
+  /*---SECTION---*/
+  .restaurant {
+    left: 0%;
+    width: 100%;
+  }
+
   .menus {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-  }
-
-  .eat1, .eat2 {
-    width: 55%;
-  }
-
-  .eat {
-    width: 45%;
-  }
-
-  .eat2 {
-    margin-left: 180px;
-  }
-
-  header.proj > div > a {
-    margin-top: 10px;
-    margin-left: -80px;
-  }
-
-  .image {
-    margin-left: -220px;
-  }
-
-  .commande > a {
-    width: 40%;
-  }
-}
-@media screen and (min-width: 1140px) {
-  .proj-food__fonction {
-    justify-content: space-around;
-  }
-
-  h2.titre {
-    margin-top: -78px;
-    font-size: 40px;
-  }
-
-  .menus {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 120px;
+    justify-content: space-between;
   }
 
   .eat, .eat1, .eat2 {
-    width: 33%;
+    width: 30%;
   }
 
-  .commande > a {
-    width: 20%;
-  }
-
-  .image {
-    width: 35%;
-    margin-left: 150px;
-  }
-
-  .fa-arrow-left {
-    font-size: 30px;
-    margin: 0px;
-  }
-
-  header.proj > div {
-    justify-content: normal;
-    display: flex;
-  }
-  header.proj > div a {
-    margin-top: 20px;
-    margin-left: 0px;
-  }
-
-  .eat2 {
-    margin-left: 0px;
-  }
-
-  .coeur {
-    font-size: 35px;
+  div.proj-palette > p.new {
     position: absolute;
-    top: 50px;
-  }
-}
-@media screen and (min-width: 1400px) {
-  header.proj > div > a {
-    margin-top: 40px;
+    right: 570px;
   }
 
-  .fa-arrow-left {
-    font-size: 40px;
+  div.proj-enchante > p.new {
+    right: 75px;
+  }
+
+  .commander {
+    width: 15%;
   }
 }
 
