@@ -96,7 +96,7 @@ $primery:#9356DC;
   display: flex;
   justify-content: space-evenly;
 }
-  .proj-food__image {
+  .header-image {
    width: 50%;
    height: 30%;
    border-radius: 0px 0px;
@@ -147,13 +147,13 @@ $primery:#9356DC;
     height: 250px;
   }
 
-  .proj-food__keep {
+  .reservation {
     width: 100%;
     font-size: 24px;
     text-align: center;
   }
 
-.proj-food__discover {
+.restaurants {
   width: 100%;
   text-align: center;
   font-size: 16px;
@@ -170,11 +170,11 @@ $primery:#9356DC;
 
   /*---ACCEUIL---*/
 
-  .proj-food__operation {
+  .operation {
     font-size: 22px;
   }
 
-  .proj-food__resto, .commander {
+  .btn-resto, .commander {
     border: 0;
     padding:10px 14px;
     font-weight: 600;
@@ -195,7 +195,7 @@ $primery:#9356DC;
     text-align: center;
   }
 
-  .proj-food__fonction {
+  .btn-fonction {
     width: 95%;
     list-style: none;
     padding-left: 20px;
@@ -204,7 +204,7 @@ $primery:#9356DC;
     flex-wrap: wrap;
   }
 
-  .proj-food__fonction > li > button {
+  .btn-fonction > li > button {
     width: 100%;
     box-shadow: 5px 5px 10px #d4d0d0;
     border-width: 0px;
@@ -229,7 +229,7 @@ $primery:#9356DC;
     margin-right: 0px;
   }
 
-  .proj-food__fonction li button a {
+  .btn-fonction li button a {
     color: black;
     margin-left: 20px;
     font-weight: bold;
@@ -392,7 +392,7 @@ $primery:#9356DC;
     margin-left: -7px;
   }
 
-  .article {
+  .container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -400,7 +400,7 @@ $primery:#9356DC;
     width: 100%;
   }
 
-  .article div {
+  .container div {
     width: 100%;
     height: 240px;
     border-radius: 20px 20px;
@@ -421,12 +421,12 @@ $primery:#9356DC;
     object-fit: cover;
   }
 
-  .btn {
+  .noms {
     font-weight: bold;
     margin: 5px;
   }
 
-  .btn__comment {
+  .commentaires {
     margin: 5px;
     opacity: 0.7;
   }
@@ -580,18 +580,18 @@ margin-top: -7px;
 margin-left: -7px;
 }
 
-img.proj-food__image {
+img.header-image {
   margin-top: 20px;
   width:30%;
   box-shadow: 0 0 0px rgba(0, 0, 0, 0.25);
   padding : 0px;
 }
  
-.article {
+.container {
   justify-content: space-around;
 }
 
-.article > div {
+.container > div {
   width: 40%;
   position: relative;
 }
