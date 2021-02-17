@@ -56,8 +56,8 @@ body {
   text-align: center;
   opacity: 0;
   animation: loading 4s;
-  left: 15%;
-  top:20%;
+  margin:30%;
+  width:40%;
 }
 
 .loader {
@@ -547,11 +547,6 @@ a {
 
   .liste {
     height: 600px;
-  }
-
-  .loading {
-    margin-top: 30%;
-    margin-left: 30%;
   }
 
   /*---FOOTER---*/
