@@ -30,9 +30,9 @@ body {
 }
 
 .fa-arrow-left {
-  position: absolute;
-  margin-left: -90px;
-  margin-top: 8px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
 }
 
 /*--ACCEUIL--*/
@@ -41,7 +41,7 @@ body {
 }
 
 .projet {
-  animation: transparence 6s;
+  animation: transparence 5s;
 }
 
 .spiner {
@@ -52,12 +52,12 @@ body {
 }
 
 .loading {
-  position: absolute;
-  margin-top: 90%;
-  margin-left: 12%;
+  position: fixed;
   text-align: center;
   opacity: 0;
-  animation: loading 6s;
+  animation: loading 4s;
+  left: 15%;
+  top:20%;
 }
 
 .loader {
@@ -84,9 +84,10 @@ body {
   height: 20%;
   background-color: white;
   margin-top: -8px;
-  padding-top: 5px;
+  padding-top: 15px;
   margin-left: -7px;
   padding-left: 12px;
+  padding-bottom: 15px;
   display: flex;
   justify-content: space-evenly;
 }
@@ -212,8 +213,11 @@ strong {
   border-radius: 15px 15px;
   background-color: #f7f7f7;
   cursor: pointer;
-  font-weight: bold;
   padding: 20px 55px 20px 0px;
+}
+
+li > button.ajout-couleur {
+  background-color: #F5EDFF;
 }
 
 li > button.modif {
@@ -223,6 +227,10 @@ li > button.modif {
 .fa-ellipsis-v, .fa-mobile-alt, .fa-bars, .fa-store {
   color: #7E7E7E;
   margin-right: 5px;
+}
+
+.fa-store {
+  color:#9356DC;
 }
 
 .fa-ellipsis-v {
@@ -258,13 +266,6 @@ li > button.modif {
   margin-top: -30px;
 }
 
-.fa-heart:hover {
-  color: #FF79DA;
-  font-weight: 900;
-  transition-duration: 3s;
-  font-size: 29px;
-}
-
 .fa-heart {
   cursor: pointer;
   font-size: 26px;
@@ -278,7 +279,7 @@ li > button.modif {
   margin-top: -50px;
   background-color: #f2f2f2;
   position: relative;
-  border-radius: 20px 20px;
+  border-radius: 40px 40px;
   margin-left: -8px;
   font-size: 18px;
 }
@@ -288,11 +289,8 @@ li > button.modif {
 }
 
 .menu {
-  width: 10%;
+  width: 12%;
   font-family: "roboto", cursive;
-}
-
-.menu:hover {
   border-bottom: 3px solid #99E2D0;
 }
 
@@ -426,16 +424,9 @@ img {
   opacity: 0.7;
 }
 
-i.fas.fa-heart:hover {
-  color: #FF79DA;
-  font-weight: bold;
-  font-weight: 900;
-}
-
-.coeur:hover {
-  color: #9356DC;
-  font-weight: bold;
-  font-weight: 900;
+.fa-heart:hover {
+  color: #c767cad4;
+  font-weight: 900 !important;
 }
 
 i.fas.fa-heart {
@@ -444,20 +435,16 @@ i.fas.fa-heart {
   justify-content: flex-end;
   margin-top: -35px;
   width: 90%;
-  font-size: 20px;
-  transition-duration: 2s;
+}
+
+button {
+  font-family: 'Roboto', sans-serif;
 }
 
 .menu {
   text-transform: uppercase;
   position: relative;
   font-weight: normal;
-}
-
-.coeur {
-  position: absolute;
-  margin-top: 45px;
-  margin-left: 2px;
 }
 
 p.new {
@@ -528,12 +515,6 @@ a {
     width: 20%;
   }
 
-  .fa-arrow-left {
-    position: absolute;
-    margin-left: -205px;
-    margin-top: -8px;
-  }
-
   .titre {
     padding: 10px 100px 28px 20px;
   }
@@ -549,10 +530,7 @@ a {
   }
 
   /*---ACCEUIL---*/
-  .loading {
-    margin-left: 30%;
-  }
-
+  
   /*---HEADER---*/
  
   .header-image {
@@ -582,12 +560,6 @@ a {
   }
 }
 @media screen and (min-width: 1000px) {
-  /*---HEADER---*/
-  .fa-arrow-left {
-    position: absolute;
-    margin-left: -275px;
-    margin-top: -4px;
-  }
 
   /*---SECTION---*/
   .restaurant {
@@ -609,11 +581,4 @@ a {
   .commander {
     width: 15%;
   }
-
-  /*---ACCEUIL---*/
-  .loading {
-    margin-top: 30%;
-    margin-left: 40%;
-  }
 }
-
