@@ -30,7 +30,7 @@ body {
 }
 
 .fa-arrow-left {
-  position: fixed;
+  position: absolute;
   top: 20px;
   left: 20px;
 }
@@ -302,7 +302,7 @@ li > button.modif {
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
-  padding: 1rem;
+  padding: 8px;
 }
 
 .description {
