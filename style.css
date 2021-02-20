@@ -36,7 +36,7 @@ body {
 }
 
 /*--ACCEUIL--*/
-.acceuil {
+.accueil {
   background-color: white;
 }
 
@@ -92,7 +92,7 @@ body {
   justify-content: space-evenly;
 }
 
-.page-dacceuil {
+.page-daccueil {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
   width: 100%;
   margin-top: -8px;
@@ -162,7 +162,7 @@ body {
 }
 
 strong {
-  margin-right: 10px;
+  margin-right: 20px;
   color: white;
   background-color: #9356DC;
   border-radius: 100%;
@@ -199,10 +199,10 @@ strong {
 .btn-fonction {
   width: 95%;
   list-style: none;
-  padding-left: 20px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-left: -20px;
 }
 
 .btn-fonction > li > button {
@@ -213,7 +213,8 @@ strong {
   border-radius: 15px 15px;
   background-color: #f7f7f7;
   cursor: pointer;
-  padding: 20px 55px 20px 0px;
+  padding: 25px 55px 25px 0px;
+  font-size: 15px;
 }
 
 li > button.ajout-couleur {
@@ -221,12 +222,12 @@ li > button.ajout-couleur {
 }
 
 li > button.modif {
-  padding-right: 60px;
+  padding-right: 55px;
 }
 
 .fa-ellipsis-v, .fa-mobile-alt, .fa-bars, .fa-store {
   color: #7E7E7E;
-  margin-right: 5px;
+  margin-right: 20px;
 }
 
 .fa-store {
@@ -434,7 +435,7 @@ i.fas.fa-heart {
   display: flex;
   justify-content: flex-end;
   margin-top: -35px;
-  width: 90%;
+  margin-right: 40px;
 }
 
 button {
